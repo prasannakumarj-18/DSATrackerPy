@@ -170,8 +170,8 @@ def main(page: ft.Page):
             expand=True, spacing=16,
             controls=[
                 ft.Column([dim_text("Welcome back,", 16),
-                           ft.Text(s["profile"]["username"], size=28,
-                                   weight=ft.FontWeight.BOLD, color=CYAN)], spacing=0),
+            ft.Text("Sai", size=28,
+                   weight=ft.FontWeight.BOLD, color=CYAN)], spacing=0),
                 card(ft.Row([
                     progress_ring(s["fraction"]),
                     ft.Column([
