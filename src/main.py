@@ -165,7 +165,6 @@ def main(page: ft.Page):
         else:
             task_rows = [empty_state(ft.Icons.TASK_ALT, "No tasks for today",
                                      "Open the Tasks tab to plan your study session.")]
-
         return ft.ListView(
             expand=True, spacing=16,
             controls=[
