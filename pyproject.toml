@@ -1,0 +1,13 @@
+[project]
+name = "dsa-tracker"
+version = "1.0.0"
+description = "Offline DSA roadmap, task and progress tracker"
+requires-python = ">=3.9"
+dependencies = [
+  "flet==0.28.3",
+]
+
+[tool.flet]
+product = "DSA Tracker"
+org = "com.dsatracker"
+company = "DSA Tracker"
