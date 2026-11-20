@@ -104,7 +104,7 @@ class Database:
         )
         self.conn.execute(
             "INSERT OR IGNORE INTO profile (id, username, goal, language, daily_target) "
-            "VALUES (1, 'Learner', 'Master Data Structures & Algorithms', 'Python', 60)"
+            "VALUES (1, 'Sai', 'Master Data Structures & Algorithms', 'Python', 60)"
         )
         self.conn.commit()
 
@@ -181,7 +181,7 @@ class Database:
     def save_profile(self, username: str, goal: str, language: str, daily_target: int):
         self.conn.execute(
             "UPDATE profile SET username = ?, goal = ?, language = ?, daily_target = ? WHERE id = 1",
-            (username.strip() or "Learner", goal.strip(), language, int(daily_target)))
+            (username.strip() or "Sai", goal.strip(), language, int(daily_target)))
         self.conn.commit()
 
     def reset_progress(self):
